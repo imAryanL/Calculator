@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calc_img.png"
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Calculator</h3>
+                        <div class="form-group">
+                            <input type="text" id="display" class="form-control text-right" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('1')">1</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('2')">2</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('3')">3</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-warning btn-block" onclick="setOperation('+')">+</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('4')">4</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('5')">5</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('6')">6</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-warning btn-block" onclick="setOperation('-')">-</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('7')">7</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('8')">8</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('9')">9</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-warning btn-block" onclick="setOperation('*')">*</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 p-1"><button type="button" class="btn btn-secondary btn-block" onclick="appendNumber('0')">0</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-danger btn-block" onclick="clearDisplay()">C</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-success btn-block" onclick="calculateResult()">=</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-warning btn-block" onclick="setOperation('/')">/</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 p-1"><button type="button" class="btn btn-info btn-block btn-scientific" onclick="calculateSquareRoot()">√</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-info btn-block btn-scientific" onclick="calculatePower()">^</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-info btn-block btn-scientific" onclick="calculateLog()">log</button></div>
+                            <div class="col-3 p-1"><button type="button" class="btn btn-info btn-block btn-scientific" onclick="calculateSin()">sin</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5">
+        <p>Aryan's Calculator</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
