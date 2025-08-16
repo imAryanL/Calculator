@@ -3,6 +3,8 @@
 ## Description
 A simple web calculator application that supports basic arithmetic operations as well as some scientific functions like square root, power, logarithm, and sine.
 
+![calc](https://github.com/user-attachments/assets/c066f022-27ef-4218-9ea2-df6bdf775a68)
+
 ## Features
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
 - Scientific operations: square root, power, logarithm, and sine.
@@ -59,7 +61,4 @@ The `script.js` file contains the following:
 #### `calculateSin()`
 - **Purpose**: Calculates the sine of the current display value.
 
-<br> 
-
-![calc](https://github.com/user-attachments/assets/c066f022-27ef-4218-9ea2-df6bdf775a68)
 
